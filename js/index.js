@@ -40,3 +40,34 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const linksArray = Array.from(document.querySelectorAll('nav a'));
+ linksArray[0].textContent = 'Services';
+ linksArray[1].textContent = 'Product';
+ linksArray[2].textContent = 'Vision';
+ linksArray[3].textContent = 'About';
+ linksArray[4].textContent = 'Contact';
+
+ const picText = document.querySelector('.cta h1');
+ picText.textContent = 'DOM Is Awesome';
+
+ const buttonText = document.querySelector('.cta button');
+ buttonText.textContent = 'Get Started';
+
+ const bigImg = document.querySelector('#cta-img');
+ bigImg.setAttribute('src', siteContent['cta']['img-src']);
+
+ const headers = document.querySelectorAll('.top-content h4');
+ headers[0].textContent = 'Features';
+//  console.log(headers);
+ const paras = document.querySelectorAll('.top-content p');
+//  console.log(paras);
+ paras[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+ 
+ headers[1].textContent = 'About';
+ paras[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+
+
+ 
+
